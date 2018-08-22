@@ -1,0 +1,29 @@
+{
+  "name": "web_server",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "app.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "author": "Joseph Pastoressa",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "global": "^4.3.2",
+    "googleapis": "^32.0.0",
+    "jsonwebtoken": "^8.3.0",
+    "jwt-decode": "^2.2.0",
+    "kexec": "^3.0.0",
+    "mongoose": "^5.1.6",
+    "nodemon": "^1.18.3",
+    "save": "^2.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.1"
+  }
+}
