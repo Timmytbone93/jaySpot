@@ -20,12 +20,6 @@ var UserSchema = new Schema({
     lastName:{
         type:String, required:true
     },
-    bar:{
-        type:Schema.Types.ObjectId, ref:'Bar',
-        required:false
-      //bar id if they are either a bartender or barOwner
-        //of a bar, gets checked on login
-    },
     googleProvider: {
         type: {
             access_token: String,

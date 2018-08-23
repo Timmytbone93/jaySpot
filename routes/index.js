@@ -73,6 +73,6 @@ router.post('/isAuthenticated', function (req, res) {
     verifyToken(req, res);
 });
 
-router.use('/Bar',require('./Bar'));
+
 
 module.exports = router;

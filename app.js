@@ -26,7 +26,7 @@ app.use(cors(corsOption));
    passphrase: 'CoEnter11'
 };*/
 
-mongoose.connect('mongodb://localhost:27017/BeerMoney',{useNewUrlParser: true });
+mongoose.connect('mongodb://localhost:27017/jayspot',{useNewUrlParser: true });
 
 //BodyParser
 app.use(bodyParser.json());

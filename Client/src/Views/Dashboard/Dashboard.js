@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import SideNav from '../../Components/SideNav/SideNav.js'
-import TopNav from '../../Components/TopNav/TopNav'
-import AddBar from  '../../Components/Forms/AddBar/AddBar'
+import Header from '../../Components/Header/Header';
 import './CSS/Dashboard.css'
 
 class Dashboard extends Component{
@@ -17,17 +15,11 @@ class Dashboard extends Component{
     render(){
         return(
             <div className="dashboard">
-
+                <Header />
 
                 <div className="align-dashboard-dropdown">
-                    <TopNav/>
+                    
                 </div>
-
-                <div className="align-dashboard-content">
-                    <AddBar/>
-                </div>
-
-
             </div>
         );
     }

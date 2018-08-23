@@ -6,11 +6,9 @@ import  jwt_decode  from 'jwt-decode';
 import axios from 'axios';
 import config from '../../Config/config.json';
 import './CSS/Login.css';
-// Images Imports
-import dark_logo from './CSS/dark_logo.png';
-import down_arrow from './CSS/down_arrow.svg';
-import white_logo from './white.png'
-//import black_logo from './Black_B.png';
+import Header from '../../Components/Header/Header';
+
+
 
 class Login extends Component {
 
@@ -19,44 +17,19 @@ class Login extends Component {
             return <Redirect to='/Dashboard' />
         }
         return (
-            <div className="login">
-                <div className="align-dropdown">
+            <div className="Login">
+            <Header />
+              <GoogleLogin
+                className='google-button'
+                clientId={config.googleApi.client_id}
+                buttonText="Login"
+                prompt='consent'
+                accessType= 'offline'
+                responseType='code'
+                onSuccess={this.responseGoogle}
+                onFailure={this.responseGoogle}
+                 />
 
-                </div>
-
-                <div id="align-content">
-                    <div id="inner">
-
-                        <img src={dark_logo} alt={dark_logo} width="800" height="400" />
-                        <div className="learnMore">
-                            <p>Learn More</p>
-                            <img src={down_arrow} alt={down_arrow} width="100" height="50" />
-                        </div>
-                    </div>
-                </div>
-                <div className="align-bottom">
-                    <div className="login-buttons">
-                                <a className="pre-signup-button active">
-                                    Sign Up
-                                </a>
-                          
-                            <a className="active" href="">
-                                    <GoogleLogin
-                                        className='pre-google-button'
-                                        clientId={config.googleApi.client_id}
-                                        buttonText="Login"
-                                        prompt='consent'
-                                        accessType= 'offline'
-                                        responseType='code'
-                                        onSuccess={this.responseGoogle}
-                                        onFailure={this.responseGoogle}
-                                    />
-                            </a>
-                        <div className="pre-menu-logo">
-                            <img src={white_logo} alt={white_logo} width="200" height="100" />
-                        </div>
-                    </div>
-                </div>
             </div>
         );
     }

@@ -1,8 +1,8 @@
 
 {
     "googleApi":{
-        "client_id":"259352296303-ff6pchr7u4g2i4vrdkhdrl65mqv25js4.apps.googleusercontent.com",
-        "client_secret":"_c0rccF9PePpOc_pnsqncIu5",
+        "client_id":"725412646539-f5a4u2c7c38h1f7606gledgc06v05it3.apps.googleusercontent.com",
+        "client_secret":"L_bS2YVAbalj3kDkOXV4Q3xP",
         "redirect_uri":"http://localhost:3000/auth/google/callback"
     }
 }

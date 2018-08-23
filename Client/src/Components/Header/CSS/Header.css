@@ -1,0 +1,38 @@
+.Header{
+
+    width:100%;
+    padding:0;
+    margin:0;
+    height:100px;
+    top:0%;
+    position:fixed;
+    background:rgba(0,0,0,.8);
+    color:white;
+
+}
+.Header .Navski{
+
+    position: absolute;;
+    right:10%;
+    width:75%;
+
+}
+.Header .Navski a{
+
+    text-decoration:none;
+    color:white;
+    margin-left:25%;
+    transition:linear .25s;
+
+}
+.Header .Navski a:hover{
+
+    color:grey;
+
+}
+#jaySpot{
+
+    padding-left:2%;
+
+
+}
